@@ -1,0 +1,13 @@
+def burbuja(elementos):
+ numero = len(elementos)
+ i= 0
+ while (i < numero):
+    j = i
+    while (j < numero):
+        if(elementos[i] > elementos[j]):
+            temp = elementos[i]
+            elementos[i] = elementos[j]
+            elementos[j] = temp
+        j= j+1
+    i=i+1
+
