@@ -28,9 +28,17 @@ class Encuentro:
 def leerArchivo(nombre_archivo=sys.argv[0],campeonato):
     arch = open(nombre_archivo,'r')
     index = 0
+    total_list=0
     for line in arch:
         if index==0:
-            campeonato.id_camp=line.
+            campeonato.id_camp=int(line.strip())
+        elif index==1:
+            campeonato.nombre=line
+        else:
+            
+
+
+        index += 1
 
 
     
